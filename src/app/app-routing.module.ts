@@ -21,7 +21,23 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
 
+  },  {
+    path: 'createuser',
+    loadChildren: () => import('./createuser/createuser.module').then( m => m.CreateuserPageModule)
   },
+  {
+    path: 'uploadasset',
+    loadChildren: () => import('./uploadasset/uploadasset.module').then( m => m.UploadassetPageModule)
+  },
+  {
+    path: 'unallocateuser',
+    loadChildren: () => import('./unallocateuser/unallocateuser.module').then( m => m.UnallocateuserPageModule)
+  },
+  {
+    path: 'signout',
+    loadChildren: () => import('./signout/signout.module').then( m => m.SignoutPageModule)
+  },
+
 
 ];
 

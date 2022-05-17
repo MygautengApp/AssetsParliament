@@ -19,6 +19,12 @@ export class LoginPage implements OnInit {
  
  }
 
+ adminDashboard(){
+  // code for login of user goes to tabs page
+  this.router.navigate(['/admin']);
+
+}
+
 
 
 }

@@ -8,6 +8,21 @@ import { Router } from '@angular/router';
 })
 export class UserPage implements OnInit {
 
+
+  appPages =[
+    
+     {
+      title:'Sign out',
+      url:'/signout', 
+     icon: 'exit'
+  
+     }
+  
+  
+  ];
+
+
+
   constructor( private router:Router) { }
 
   ngOnInit() {

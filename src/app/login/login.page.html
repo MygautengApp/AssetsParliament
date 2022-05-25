@@ -23,8 +23,8 @@
 
 </ion-item>
 <ion-row>
-<ion-button  type="submit" color="primary" expand="block" (click)="logMeIn()">Login</ion-button>
-<ion-button  type="submit" color="secondary" expand="block" (click)="adminDashboard()">Admin</ion-button>
+<ion-button  type="submit" color="primary" expand="block" [routerLink]="['/tabs']">Login</ion-button>
+<ion-button  type="submit" color="secondary" expand="block" [routerLink]="['/admin']">Admin</ion-button>
 
 
 

@@ -5,8 +5,28 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
+    path: 'tabs',
+    component: TabsPage,
+    children:[
+    {
+    path: 'logcall',
+    loadChildren: () => import('./logcall/logcall.module').then( m => m.LogcallPageModule)
+  },
+  {
+    path: 'allocateincident',
+    loadChildren: () => import('./allocateincident/allocateincident.module').then( m => m.AllocateincidentPageModule)
+  },
+  {
     path: '',
-    component: TabsPage
+    redirectTo: '/tabs/logcall',
+    pathMatch: 'full'
+  }
+]
+  },
+  {
+    path: '',
+    redirectTo: '/tabs/logcall',
+    pathMatch: 'full'
   }
 ];
 

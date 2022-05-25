@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AdminPage implements OnInit {
 
   currentPageTitle='Dashboard';
-  appPages =[
+  adminpages =[
     {
       title: 'Dashboard',
       url: '',
@@ -39,8 +39,6 @@ export class AdminPage implements OnInit {
   
   ];
   
-
-
 
   constructor() { }
 

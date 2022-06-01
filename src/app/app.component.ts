@@ -21,6 +21,11 @@ export class AppComponent {
       title: 'About',
       url: '/tabs/tab3',
       icon: 'information-circle'
+    },
+    {
+      title: 'Sign-out',
+      url: '',
+      icon: 'exit'
     }
   ];
   

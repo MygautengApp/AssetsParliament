@@ -8,19 +8,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
  pages = [
     {
-      title: 'Login',
+      title: 'Log Call',
       url: '/tabs/tab1',
-      icon: 'log-in'
+      icon: 'call'
     },
     {
-      title: 'Contact',
+      title: 'Allocate Incident',
       url: '/tabs/tab2',
-      icon: 'person'
+      icon: 'build'
+     
     },
     {
-      title: 'About',
+      title: 'View Call',
       url: '/tabs/tab3',
-      icon: 'information-circle'
+      icon: 'reorder-three'
+     
     },
     {
       title: 'Sign-out',

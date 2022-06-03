@@ -6,9 +6,10 @@
           <ion-list-header>Inbox</ion-list-header>
           <ion-note>hi@ionicframework.com</ion-note>
           <ion-menu-toggle autoHide="false" *ngFor="let p of pages">
-            <ion-item  style="background-color:#064005;" [routerLink]="[p.url]" routerLinkActive="selected" routerDirection="root" lines="none" detail="false">
+            <ion-item  [routerLink]="[p.url]" routerLinkActive="selected" routerDirection="root" lines="none" detail="false">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
             </ion-item>
           </ion-menu-toggle>
 		   

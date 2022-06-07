@@ -3,8 +3,13 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list >
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+          <ion-list-header><img alt="logo" height="60"  src="assets/Screenshot (49).png" >
+            <ion-note>
+              <h1>Luvhani</h1>
+              mabailuvhani@gmail.com
+            </ion-note>
+          </ion-list-header>
+
           <ion-menu-toggle autoHide="false" *ngFor="let p of pages">
             <ion-item  [routerLink]="[p.url]" routerLinkActive="selected" routerDirection="root" lines="none" detail="false">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
